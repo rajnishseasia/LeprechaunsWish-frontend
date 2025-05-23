@@ -125,15 +125,16 @@ const ComingSoon = () => {
             <b>Coming Soon</b>
           </h1>
           <p className="desc font-white">
-            Our website is currently undergoing scheduled maintenance.
+            {/* Our website is currently undergoing scheduled maintenance. */}
+            We are getting ready to share the magic.
             <br />
-            We should be back shortly. Thank you for your patience.
-          </p>
+            {/* We should be back shortly. Thank you for your patience. */}
+            Stay tuned          </p>
           <ul className="social-btn font-white">
-            <li><a href="#">facebook</a></li>
+            {/* <li><a href="#">facebook</a></li> */}
             <li><a href="#">twitter</a></li>
-            <li><a href="#">google</a></li>
-            <li><a href="#">instagram</a></li>
+            {/* <li><a href="#">google</a></li> */}
+            <li><a href="#">discord</a></li>
           </ul>
         </div>
       </div>
