@@ -1,0 +1,91 @@
+// import { BannerNFT } from "@/assets";
+// import CommonCrystalCard from "@/components/Cards/CommonCrystalCard";
+// import WalletConnectButton from "@/components/ConnectButton/ConnectButton";
+// import { vaultCardData } from "@/lib/constants";
+// import React from "react";
+// import { Parallax } from "react-scroll-parallax";
+// import { useAccount } from "wagmi";
+
+// function Home() {
+//   const { isConnected } = useAccount();
+//   return (
+//     <div className="w-full pb-10 ">
+//       <div className="flex flex-col justify-center items-center md:pt-[50px] pt-[20px] w-full font-play">
+//         <h1 className="text-white md:text-[56px] text-[32px] font-[600]">
+//           Help create the magic!
+//         </h1>
+//         <div className=" flex flex-col gap-3">
+//           <p className="text-white/80 md:text-[20px] text-[16px] font-[400]">
+//             {`A unique set of utility NFT’s being sold to raise funds for The
+//             Leprechaun’s Wish which is a live action feature St Patrick’s
+//             Day movie with a message of world peace.
+//             There are two types of coins – Community Coins –(love
+//             token, Shamrock, ruin and crystal) which can come with
+//             perks such as digital downloads of the movie and swag bags.
+//             `}
+//           </p>
+//           <p className="text-white/80 md:text-[20px] text-[16px] font-[400]">
+//             {`The rarer coins (Rainbow Coins, 4 Leaf Clover, Wish Coins and
+//             Unicorn Key) can only be bought by accredited investors and
+//             serve as shares in the movie(ROI + Net % of Profits) and real
+//             life perks such as private movie screenings, small part in the
+//             movie, cast and crew after party and VIP tickets to the
+//             premiere
+//             `}
+//           </p>
+//         </div>
+//         {!isConnected && (
+//           <div className="pt-6">
+//             <WalletConnectButton />
+//           </div>
+//         )}
+//         <div className="w-full mt-20 ">
+//           <Parallax speed={-5}>
+//             <video
+//               src={"/main.mp4"}
+//               loop
+//               autoPlay
+//               className="w-full rounded-lg md:h-[510px] h-[300px] object-cover"
+//             ></video>
+//           </Parallax>
+//         </div>{" "}
+//       </div>
+//       <div className="flex flex-col justify-center items-center md:pt-[50px] pt-[25px] w-full">
+//         <h1 className="text-white md:text-[40px] text-[24px] font-[600]">
+//           Our Exclusive Collection
+//         </h1>
+//         <p className="text-white/80 md:text-[16px] text-[12px] font-[400]">
+//           Explore, Buy, and Collect One-of-a-Kind Digital Art
+//         </p>
+//       </div>
+//       <div className="w-full flex justify-center py-[56px]">
+//         <div className="flex flex-wrap justify-center  gap-[30px]">
+//           {vaultCardData.map((val) => (
+//             <CommonCrystalCard val={val} type={"vault"} key={val.name} />
+//           ))}
+//         </div>
+//       </div>
+//       <Parallax speed={5}>
+//         <div className="flex justify-center">
+//           <div className="bg-bannerBg bg-cover border-white/60 border rounded-[15px] text-white md:px-[56px] px-[25px] md:py-[75px] py-[30px] md:w-[1084px] w-full mds:h-[400px] h-auto flex md:flex-row flex-col justify-between gap-6 md:gap-16">
+//             <div className="md:w-[400px] w-full">
+//               <h1 className="text-[#8C74D4] md:text-[32px] text-[25px] font-[600]">
+//                 Buy our Exclusive NFTs
+//               </h1>
+//               <p className="text-white/80 font-[400] md:text-base text-[12px]">
+//                 We provide an easy and secure platform to explore, purchase, and
+//                 manage your NFTs. With a wide range of collections and exclusive
+//                 drops, you're bound to find something you love!
+//               </p>
+//             </div>
+//             <div className="md:block flex justify-center">
+//               <img src={BannerNFT} alt="banner Nft" />
+//             </div>
+//           </div>
+//         </div>
+//       </Parallax>
+//     </div>
+//   );
+// }
+
+// export default Home;

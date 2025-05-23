@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* SCROLL BAR  */
+
+/* WebKit Browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Track color */
+  /* border-radius: 6px;  */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    84.99deg,
+    #8768ed -15.64%,
+    #00eab3 42.45%,
+    #8768ed 97.45%
+  ); /* Thumb color */
+  border-radius: 6px; /* Rounded scrollbar thumb */
+  border: 3px solid #1a1a1a; /* Adds space around the thumb */
+}
+
+.ju367v78 {
+  background-color: #210860 !important;
+  font-size: 12px !important;
+  font-weight: 400;
+  border-radius: 100px !important;
+  color: #fff !important;
+  border: 1px solid #8768ed !important;
+  backdrop-filter: blur(42px) !important;
+}
+
+.iekbcc0 {
+  font-size: 12px !important;
+}
+
+.ju367v75 {
+  display: none !important;
+}
+.ju367va3 {
+  background: linear-gradient(
+      90deg,
+      rgba(46, 18, 143, 0.23) 0%,
+      rgba(75, 47, 90, 0.23) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  font-size: small !important;
+  border-radius: 100px !important;
+  color: white !important;
+  border: none !important;
+}
+
+.gradient-text {
+  background: linear-gradient(97.86deg, #ff8d8d -38.38%, #f7fc0e 71.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+/* ---break---  */
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.otp-container {
+  display: flex;
+  gap: 5px;
+  color: white !important;
+  border: #545e6666 !important;
+}
+
+.otp-container input {
+  width: 50px !important;
+  height: 50px !important;
+  background: #131b24;
+  border: 1px solid #545e6666 !important;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .otp-container input {
+    width: 30px !important; /* Reduce width for smaller screens */
+    height: 30px !important; /* Reduce height for smaller screens */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+}
+
+.subscript {
+  bottom: -0.45em !important;
+  background: linear-gradient(97.86deg, #ff8d8d -38.38%, #f7fc0e 71.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.subscript-price {
+  bottom: -5px !important;
+  background: linear-gradient(97.86deg, #ff8d8d -38.38%, #f7fc0e 71.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
