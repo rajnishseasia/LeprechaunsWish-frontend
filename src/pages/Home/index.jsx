@@ -130,12 +130,19 @@ const ComingSoon = () => {
             <br />
             {/* We should be back shortly. Thank you for your patience. */}
             Stay tuned          </p>
-          <ul className="social-btn font-white">
-            {/* <li><a href="#">facebook</a></li> */}
-            <li><a href="#">twitter</a></li>
-            {/* <li><a href="#">google</a></li> */}
-            <li><a href="#">discord</a></li>
+            <ul className="social-btn font-white">
+            <li>
+              <a href="https://x.com/LeprechaunsWish" target="_blank" rel="noopener noreferrer">
+                twitter
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.gg/8apkGVaH" target="_blank" rel="noopener noreferrer">
+                discord
+              </a>
+            </li>
           </ul>
+
         </div>
       </div>
     </div>
