@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const ComingSoon = () => {
@@ -63,7 +62,6 @@ const ComingSoon = () => {
         }
 
         .title {
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
           font-size: 3.5em;
           line-height: 1;
         }
@@ -74,6 +72,16 @@ const ComingSoon = () => {
           line-height: 1.6;
           font-size: 1.05em;
           color: #fff;
+        }
+
+        .announcement {
+          font-size: 1.2em;
+          max-width: 800px;
+          margin: 40px auto 20px;
+          line-height: 1.8;
+          font-weight: bold;
+          color: #fff;
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
         }
 
         .font-white {
@@ -121,33 +129,32 @@ const ComingSoon = () => {
 
       <div className="display-table">
         <div className="display-table-cell">
-          <h1 className="title font-white">
-            <b>Coming Soon</b>
-          </h1>
-          <p className="desc font-white">
-            {/* Our website is currently undergoing scheduled maintenance. */}
-            We are getting ready to share the magic.
-            <br />
-            {/* We should be back shortly. Thank you for your patience. */}
-            Stay tuned          </p>
-            <ul className="social-btn font-white">
+          {/* 🎯 Announcement Block */}
+          <div className="announcement">
+            NFT Drop scheduled for week June 9th 2025. <br />
+            Watch the explainer video, read the Rainbow Paper and reserve a coin here: <br />
+            <a
+              href="https://linktr.ee/TheLeprechaunsWish"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#00f7ff', textDecoration: 'underline' }}
+            >
+              https://linktr.ee/TheLeprechaunsWish
+            </a>
+          </div>
+
+          {/* 🌐 Social Links */}
+          <ul className="social-btn font-white">
             <li>
-              <a href="https://x.com/LeprechaunsWish" target="_blank" rel="noopener noreferrer">
-                twitter
-              </a>
+              <a href="https://x.com/LeprechaunsWish" target="_blank" rel="noopener noreferrer">twitter</a>
             </li>
             <li>
-              <a href="https://discord.gg/thefairyrealm" target="_blank" rel="noopener noreferrer">
-                discord
-              </a>
+              <a href="https://discord.gg/thefairyrealm" target="_blank" rel="noopener noreferrer">discord</a>
             </li>
             <li>
-              <a href="https://t.me/TheLeprechaunsWish" target="_blank" rel="noopener noreferrer">
-                telegram
-              </a>
+              <a href="https://t.me/TheLeprechaunsWish" target="_blank" rel="noopener noreferrer">telegram</a>
             </li>
           </ul>
-
         </div>
       </div>
     </div>
