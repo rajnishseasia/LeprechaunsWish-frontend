@@ -137,7 +137,7 @@ const ComingSoon = () => {
               </a>
             </li>
             <li>
-              <a href="https://discord.gg/8apkGVaH" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.gg/thefairyrealm" target="_blank" rel="noopener noreferrer">
                 discord
               </a>
             </li>
