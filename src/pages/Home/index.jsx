@@ -141,6 +141,11 @@ const ComingSoon = () => {
                 discord
               </a>
             </li>
+            <li>
+              <a href="https://t.me/TheLeprechaunsWish" target="_blank" rel="noopener noreferrer">
+                telegram
+              </a>
+            </li>
           </ul>
 
         </div>

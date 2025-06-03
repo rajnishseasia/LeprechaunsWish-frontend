@@ -7,4 +7,7 @@ export const ROUTES = {
   VAULT: "/vault",
   ADMIN: "/admin",
   CONTACT: "/contact",
+  RAINBOWLIST: "/rainbowlist",
+
+
 };

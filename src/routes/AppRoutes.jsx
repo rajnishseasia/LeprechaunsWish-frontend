@@ -11,6 +11,7 @@ import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 // const Home = lazy(() => import("../pages/Home"));
 const ComingSoon = lazy(() => import("../pages/Home"));
+const Rainbowlist = lazy(() => import("../pages/RainbowList"));
 
 const NftCardSection = lazy(() => import("@/pages/NFTCards"));
 const CrystalDetail = lazy(() => import("@/pages/Crystal"));
@@ -30,6 +31,8 @@ function AppRoutes() {
         <Routes>
 
           <Route path={ROUTES.HOME} element={<ComingSoon />} />
+          <Route path={ROUTES.RAINBOWLIST} element={<Rainbowlist />} />
+
           <Route path={ROUTES.HOME} element={<MainLayout />}>
             {/* <Route index element={<Home />} /> */}
             <Route path={ROUTES.NFTS} element={<NftCardSection />} />
