@@ -8,6 +8,8 @@ export const ROUTES = {
   ADMIN: "/admin",
   CONTACT: "/contact",
   RAINBOWLIST: "/rainbowlist",
+  RAINBOWPAPER: "/rainbowpaper",
+
 
 
 };

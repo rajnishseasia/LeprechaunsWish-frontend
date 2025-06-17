@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./styles.css"
 const ComingSoon = () => {
   return (
     <div
       className="main-area center-text"
       style={{
-        backgroundImage: "url('/images/comingsoon_bg.jpg')",
+        backgroundImage: "url('/images/rainbowpaper.png')",
         position: "relative",
         height: "100vh",
         zIndex: 1,
@@ -15,6 +15,12 @@ const ComingSoon = () => {
       }}
     >
       <style>{`
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
         html, body {
           font-size: 16px;
           font-family: 'Open Sans', sans-serif;
@@ -76,12 +82,19 @@ const ComingSoon = () => {
 
         .announcement {
           font-size: 1.2em;
-          max-width: 800px;
-          margin: 40px auto 20px;
+          max-width: 100%;
+          margin: auto;
           line-height: 1.8;
           font-weight: bold;
           color: #fff;
           text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center;     /* Center vertically */
+          gap: 20px;               /* Space between divs */
         }
 
         .font-white {
@@ -106,7 +119,7 @@ const ComingSoon = () => {
           padding-bottom: 7px;
           position: relative;
           overflow: hidden;
-          color: #fff;
+          color: #facc15;
           text-decoration: none;
           transition: all 0.3s;
         }
@@ -127,36 +140,58 @@ const ComingSoon = () => {
         }
       `}</style>
 
-      <div className="display-table">
-        <div className="display-table-cell">
-          {/* 🎯 Announcement Block */}
-          <div className="announcement">
-            NFT Drop scheduled for week June 9th 2025. <br />
-            Watch the explainer video, read the Rainbow Paper and reserve a coin here: <br />
-            <a
-              href="https://linktr.ee/TheLeprechaunsWish"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: '#00f7ff', textDecoration: 'underline' }}
-            >
-              https://linktr.ee/TheLeprechaunsWish
-            </a>
-          </div>
+        {/* 🎯 Announcement Block */}
+        <div className="announcement flex gap-4 p-6">
+          <button
+            className="btn neon-btn neon-orange"
+            onClick={() => window.open("https://youtu.be/zVY7zPQ8dXMT", "_blank")}
+          >
+            INTRO VIDEO
+          </button>
 
-          {/* 🌐 Social Links */}
-          <ul className="social-btn font-white">
-            <li>
-              <a href="https://x.com/LeprechaunsWish" target="_blank" rel="noopener noreferrer">twitter</a>
-            </li>
-            <li>
-              <a href="https://discord.gg/thefairyrealm" target="_blank" rel="noopener noreferrer">discord</a>
-            </li>
-            <li>
-              <a href="https://t.me/TheLeprechaunsWish" target="_blank" rel="noopener noreferrer">telegram</a>
-            </li>
-          </ul>
+          <button
+            className="btn neon-btn neon-orange"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1Sos-oWMoLfBMVwXkCcIIdZzRjlqWHhng/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            THE RAINBOW PAPER
+          </button>
+
+          <button 
+          className="btn neon-btn neon-orange"
+          onClick={() =>
+            window.open("https://docs.google.com/forms/d/1uBmZAPTvNVAiPV_srBo5vit4S8GGF1gTLCSsX3fguaY/viewform?pli=1&pli=1&edit_requested=true",
+              "_blank"
+            )
+            }
+          >
+            RESERVE A COIN
+          </button>
         </div>
-      </div>
+        {/* 🌐 Social Links */}
+        <ul className="social-btn font-semibold space-y-2 text-xl">
+          <li>
+            <a href="https://x.com/LeprechaunsWish" target="_blank" rel="noopener noreferrer">
+              twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://discord.gg/thefairyrealm" target="_blank" rel="noopener noreferrer">
+              discord
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/TheLeprechaunsWish" target="_blank" rel="noopener noreferrer">
+              telegram
+            </a>
+          </li>
+        </ul>
+
+
     </div>
   );
 };
